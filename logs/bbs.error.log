@@ -1,0 +1,10 @@
+846 - 22:16:41.380 [main] ERROR AbstractTemplateEngine -- 无法创建文件，请检查配置信息！
+freemarker.template.TemplateNotFoundException: Template not found for name "/mapper.xml.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine, basePackagePath="/").
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2797)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2599)
+	at com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine.writer(FreemarkerTemplateEngine.java:50)
+	at com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine.batchOutput(AbstractTemplateEngine.java:86)
+	at com.baomidou.mybatisplus.generator.AutoGenerator.execute(AutoGenerator.java:102)
+	at com.example.demo.base.mybatis.MybatisPlusGeneratorComm.setCommParams(MybatisPlusGeneratorComm.java:50)
+	at com.example.demo.base.MybatisGenerate.main(MybatisGenerate.java:21)

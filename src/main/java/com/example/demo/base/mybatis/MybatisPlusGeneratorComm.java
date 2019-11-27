@@ -161,7 +161,7 @@ public class MybatisPlusGeneratorComm {
         pc.setParent(pathInfo.getCommPath());
         pc.setEntity("model.domain");
         pc.setMapper("mapper");
-        pc.setController("web.frontend");
+        pc.setController("controller");
         TemplateConfig templateConfig = new TemplateConfig();
         if (!pathInfo.isEntity()) {
             templateConfig.setEntity(null);

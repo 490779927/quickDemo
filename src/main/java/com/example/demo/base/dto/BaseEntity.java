@@ -18,7 +18,7 @@ import java.util.Date;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class BaseEntity extends Model implements Serializable {
+public class BaseEntity<T extends BaseEntity>  extends Model<BaseEntity> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
