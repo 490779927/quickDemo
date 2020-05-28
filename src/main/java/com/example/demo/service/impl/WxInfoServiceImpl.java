@@ -16,5 +16,4 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class WxInfoServiceImpl extends ServiceImpl<WxInfoMapper, WxInfo> implements IWxInfoService {
-
 }

@@ -2,7 +2,7 @@ spring:
   profiles: local
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/swimming?serverTimezone=UTC&useSSL=false&characterEncoding=utf8
+      url: jdbc:mysql://localhost:3306/demoy?serverTimezone=UTC&useSSL=false&characterEncoding=utf8
       username: root
       password: 123456
       driver-class-name: com.mysql.jdbc.Driver
@@ -25,6 +25,11 @@ spring:
     port: 6379
     password:
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 pagehelper:
   helper-dialect: mysql
   reasonable: true
@@ -34,7 +39,7 @@ server:
   port: 8888
 logging:
   level:
-    com.yizhiyiye.bms.dao.self: DEBUG
+    com.example.demo.dao.self: DEBUG
 mybatis:
   configuration:
     map-underscore-to-camel-case: true

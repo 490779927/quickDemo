@@ -17,7 +17,7 @@ public class MybatisGenerate {
         pathInfo.setBaseControllerPath("com.example.demo.base.interceptor.BaseController");
         pathInfo.setFileOverride(true);
         DataBaseInfo dataBaseInfo = DataBaseInfo.getInstance();
-        dataBaseInfo.setDataBaseName("wx");
+        dataBaseInfo.setDataBaseName("demo");
         MybatisPlusGeneratorComm.setCommParams(pathInfo,dataBaseInfo);
     }
 }
